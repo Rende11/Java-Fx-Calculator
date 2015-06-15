@@ -39,7 +39,7 @@ public class Controller implements Initializable{
 
     @FXML
     private void handlePointAction(ActionEvent event){
-        if (!display.equals(".")){
+        if (!display.getText().equals(".")){
             display.setText(display.getText().concat("."));
         }
     }
@@ -53,13 +53,7 @@ public class Controller implements Initializable{
         }
 
     }
-    @FXML
-    private void handleDisplayAction (ActionEvent event) {
-        if (!event.getSource().equals("[0-9]")){
-            display.setText("QQ");
-        }
 
-    }
 
     @FXML
     private void handleSqrtAction (ActionEvent event) {
